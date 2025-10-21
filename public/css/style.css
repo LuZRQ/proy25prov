@@ -1,0 +1,141 @@
+
+/*
+|--------------------------------------------------------------------------
+| NAVBAR ELEGANTE PARA GARABATO CAFÉ 
+|--------------------------------------------------------------------------
+*/
+.navbar {
+  background-color: #f7f2e9; /* Beige */
+  border-top: 2px solid #5c3d2e;    /* borde arriba */
+  border-bottom: 2px solid #5c3d2e; /* borde abajo */
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* sombra suave abajo */
+}
+
+/* Marca */
+.navbar-brand {
+  color: #5c3d2e !important; /* café elegante */
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* separación entre logo y texto */
+  transition: color 0.3s ease;
+}
+.navbar-brand:hover {
+  color: #8B4513 !important; /* café más claro al hover */
+}
+.navbar-brand img {
+  height: 50px;
+  width: auto;
+  border-radius: 6px; /* esquinas suaves al logo */
+}
+
+/* Links */
+.navbar .nav-link {
+  color: #3e2a1f !important; /* marrón oscuro */
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+.navbar .nav-link:hover {
+  color: #8B4513 !important; /* marrón café */
+  background-color: rgba(255, 255, 255, 0.658); /* efecto suave */
+  border-radius: 8px;
+}
+
+/* Activo */
+.navbar .nav-link.active {
+  color: #b87333 !important; /* cobre */
+  font-weight: bold;
+}
+
+/* Toggler (hamburguesa) */
+.navbar-toggler {
+  border-color: #5c3d2e;
+}
+.navbar-toggler-icon {
+  background-image: var(--bs-navbar-toggler-icon-bg);
+}
+
+
+
+/*
+|--------------------------------------------------------------------------
+| para la barra de calificacion
+|--------------------------------------------------------------------------
+*/
+.progress-bar.coffee {
+  background: linear-gradient(90deg, #8B4513, #D2691E);
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Bordes y estilo garabato  la  PARTE DE MENU
+|--------------------------------------------------------------------------
+*/
+
+.garabato-card {
+    border: 2px dashed #7b4b24; /* color café */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #c7c2b7;
+}
+.garabato-card:hover {
+    transform: translateY(-5px) rotate(-1deg);
+    box-shadow: 3px 3px 0px #7b4b24;
+}
+
+.garabato-img {
+    border: 2px dotted #d4a373;
+    background: #fdf5e6;
+}
+
+/* Colores pill nav */
+.pill-filter .nav-link {
+    border: 2px solid #d4a373;
+    border-radius: 20px;
+    color: #7b4b24;
+    background: #fffdf8;
+}
+.pill-filter .nav-link.active {
+    background: #d4a373;
+    color: white;
+    font-weight: bold;
+}
+
+/* Título */
+.section-title {
+    font-family: 'Comic Neue', cursive; /* tipografía doodle */
+    font-weight: 700;
+    color: #7b4b24;
+}
+.text-coffee {
+    color: #7b4b24;
+}
+
+/*
+|--------------------------------------------------------------------------
+| SECCION DE NUESTRA HGISTORIA
+|--------------------------------------------------------------------------
+*/
+
+.text-coffee {
+    color: #6f4e37;
+    /* Marrón café */
+}
+
+.icon-box {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-box:hover {
+    transform: scale(1.2);
+    color: #b87442;
+    /* café más claro */
+}
+
+.text-coffee {
+    color: #6f4e37;
+    /* Marrón café */
+}
