@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
@@ -123,8 +123,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="{{ asset('js/script.js') }}"></script>
-
+    <script src="https://kit.fontawesome.com/a2e0e9e1b4.js" crossorigin="anonymous"></script>
     <style>
         .hover-opacity:hover {
             opacity: 1 !important;

@@ -6,7 +6,7 @@ use App\Http\Controllers\PublicController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\OpinionController;
-
+use Illuminate\Support\Facades\Http;
 // Página pública
 Route::get('/', [PublicController::class, 'index'])->name('home');
 
@@ -30,5 +30,22 @@ Route::middleware(['auth'])->group(function () {
         ->middleware('esCliente');
 });
 
+
+
+// API Recetas de bebidas
+Route::get('/bebidas', function () {
+    $response = Http::get("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=coffee");
+    $bebidas = $response->json();
+    return view('public.bebidas', compact('bebidas'));
+});
+
+// API Clima
+Route::get('/clima', function () {
+    $city = "La Paz,BO";
+    $apiKey = "TU_API_KEY"; // reemplaza con tu key gratuita
+    $response = Http::get("https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$apiKey&units=metric");
+    $clima = $response->json();
+    return view('public.clima', compact('clima'));
+});
 
 require __DIR__.'/admin.php';
